@@ -34,7 +34,6 @@
 
 <div class="px-4 py-5 my-5 text-center">
 
-    <!-- Logo ปรับใหญ่ขึ้น -->
     <img class="d-block mx-auto mb-4"
          src="img/Logo_1.png"
          alt="Cat Logo"
@@ -42,9 +41,7 @@
 
     <!-- หัวข้อ -->
     <h1 class="display-5 fw-bold">Welcome to Cat Lovers</h1>
-
     <div class="col-lg-6 mx-auto">
-
         <!-- รายละเอียด -->
         <p class="lead mb-4">
             Discover the wonderful world of cats. 
@@ -62,23 +59,347 @@
                 About Us
             </a>
         </div>
-
     </div>
 </div>
 
+<title>Product</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .product-header {
+            background-color: #cfe2ff;
+            border: 1px solid #9ec5fe;
+            border-radius: 6px;
+            padding: 18px;
+            margin-bottom: 25px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        /* ช่องสำหรับ Product ที่ยังไม่มีรูป */
+        .image-placeholder {
+            width: 100%;
+            height: 320px;
+            background-color: #e9ecef;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #6c757d;
+            font-size: 18px;
+        }
+
+        .product-body {
+            padding: 18px;
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+
+        /* Cart */
+        .cart-box {
+            position: relative;
+            color: white;
+            font-size: 26px;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -12px;
+
+            background-color: red;
+            color: white;
+
+            font-size: 11px;
+
+            width: 20px;
+            height: 20px;
+
+            border-radius: 50%;
+
+            text-align: center;
+            line-height: 20px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- Navbar -->
+     
+    <div id="menu-container"></div>
+
+
+    <!-- Content -->
+    <div class="container mt-4 mb-5">
+
+        <!-- Products -->
+        <div class="row g-4">
+
+
+            <!-- Product 1 -->
+            <div class="col-md-4">
+
+                <div class="product-card">
+
+                    <img src="img/cat1.png"
+                         class="product-img"
+                         alt="Cat 1">
+
+                    <div class="product-body">
+
+                        <div class="product-title">
+                            Tawhan Cat
+                        </div>
+
+                        <div class="product-price">
+                            ราคา 5,500 บาท
+                        </div>
+
+                        <button class="btn btn-primary"
+                                onclick="addCart()">
+
+                            <i class="bi bi-cart3 text-white"></i>
+                            Add +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="col-md-4">
+
+                <div class="product-card">
+
+                    <img src="img/cat2.jpeg"
+                         class="product-img"
+                         alt="Cat 2">
+
+                    <div class="product-body">
+
+                        <div class="product-title">
+                            Luna Cat
+                        </div>
+
+                        <div class="product-price">
+                            ราคา 4,500 บาท
+                        </div>
+
+                        <button class="btn btn-primary"
+                                onclick="addCart()">
+
+                            <i class="bi bi-cart3 text-white"></i>
+                            Add +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="col-md-4">
+
+                <div class="product-card">
+
+                    <img src="img/catthai.jpg"
+                         class="product-img"
+                         alt="Cat 3">
+
+                    <div class="product-body">
+
+                        <div class="product-title">
+                            Thai Cat
+                        </div>
+
+                        <div class="product-price">
+                            ราคา 3,500 บาท
+                        </div>
+
+                        <button class="btn btn-primary"
+                                onclick="addCart()">
+
+                            <i class="bi bi-cart3 text-white"></i>
+                            Add +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-4">
+
+                <div class="product-card">
+
+                    <img src="img/cat44.jpg"
+                         class="product-img"
+                         alt="Cat 3">
+
+                    <div class="product-body">
+
+                        <div class="product-title">
+                            Manee Cat
+                        </div>
+
+                        <div class="product-price">
+                            ราคา 3,000 บาท
+                        </div>
+
+                        <button class="btn btn-primary"
+                                onclick="addCart()">
+
+                            <i class="bi bi-cart3 text-white"></i>
+                            Add +
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+                        <!-- Product 5 -->
+            <div class="col-md-4">
+
+                <div class="product-card">
+
+                    <img src="img/cat5.jpeg"
+                         class="product-img"
+                         alt="Cat 5">
+
+                    <div class="product-body">
+
+                        <div class="product-title">
+                            Somsom Cat
+                        </div>
+
+                        <div class="product-price">
+                            ราคา 3,000 บาท
+                        </div>
+
+                        <button class="btn btn-primary"
+                                onclick="addCart()">
+
+                            <i class="bi bi-cart3 text-white"></i>
+                            Add +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="col-md-4">
+
+                <div class="product-card">
+
+                    <img src="img/cat6.jpeg"
+                         class="product-img"
+                         alt="Cat 6">
+
+                    <div class="product-body">
+
+                        <div class="product-title">
+                            Gray Cat
+                        </div>
+
+                        <div class="product-price">
+                            ราคา 3,000 บาท
+                        </div>
+
+                        <button class="btn btn-primary"
+                                onclick="addCart()">
+
+                            <i class="bi bi-cart3 text-white"></i>
+                            Add +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
 <div class="container">
-
-  <h3 class="alert alert-primary mt-4">หน้าหลัก</h3>
-
-  
-  <div class="alert alert-light text-left shadow-sm">
-    <h5 class="mb-1">Hello Kaewalin</h5>
-    <p class="mb-0 text-secondary">ยินดีต้อนรับเข้าสู่เว็บไซต์ของเรา</p>
-  </div>
-
-  <div class="mb-4">
-    <a class="btn btn-primary" href="https://www.google.com/" target="_blank">Google</a>
-  
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Columns with icons</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+        </div>
+        <h2>Featured title</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+        </div>
+        <h2>Featured title</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <h2>Featured title</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+    </div>
   </div>
 
   <div class="row mb-4">
@@ -101,6 +422,7 @@
       </div>
     </div>
 
+    
     <div class="col-md-4 mb-3">
       <div class="card h-100 shadow-sm">
         <div class="card-body">
@@ -142,11 +464,10 @@
           </form>
         </div>
       </div>
-    </div>
 
-  </div>
 
 </div>
+
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/menu.js"></script>
